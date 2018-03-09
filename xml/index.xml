@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_lite.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_lite.rng" type="application/xml"
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
 	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-stylesheet type="text/css" href="mystyles.css"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader>
       <fileDesc>
@@ -9,7 +10,7 @@
             <title>Title</title>
          </titleStmt>
          <publicationStmt>
-            <p>Publication information</p>
+            <p>Publication Information</p>
          </publicationStmt>
          <sourceDesc>
             <p>Information about the source</p>
@@ -17,8 +18,58 @@
       </fileDesc>
   </teiHeader>
   <text>
-      <body>
-         <p>Some text here.</p>
-      </body>
+     <front>
+        <div type="dedication">
+           <p>In memory of Lisa Wheeman.</p>
+        </div>
+        <div type="contents">
+           <head>Table of Contents</head>
+           <list>
+              <item>I. The Decision</item>
+              <item>II. The Fuss</item>
+              <item>III. The Celebration</item>
+           </list>
+           <list rend="inline numbered">
+              <label>(1)</label>
+              <item>My first rough manuscript, without any
+                 intermediate copy, has been sent to the press.</item>
+              <label>(2)</label>
+              <item>Not a sheet has been seen by any human
+                 eyes, excepting those of the author and the printer:
+                 the faults and the merits are exclusively my own.</item>
+           </list>
+           <list type="gloss">
+              <head>Report of the conduct and progress of Ernest Pontifex.
+                 Upper Vth form — half term ending Midsummer 1851</head>
+              <label>Classics</label>
+              <item>Idle listless and unimproving</item>
+              <label>Mathematics</label>
+              <item>ditto</item>
+              <label>Divinity</label>
+              <item>ditto</item>
+              <label>Conduct in house</label>
+              <item>Orderly</item>
+              <label>General conduct</label>
+              <item>Not satisfactory, on account of his great
+                 unpunctuality and inattention to duties</item>
+           </list>
+        </div>
+     </front>
+     <body>
+        <p>For the first time in twenty-five years, Dr Burt Diddledygook decided not to turn up to the annual meeting of the Royal Academy of Whoopledywhaa (RAW). It was a sunny day in late September 1960 bang on noontime and Dr Burt was looking forward to a stroll in the park instead. He hoped his fellow members of the RAW weren't even going to notice his absence.</p>
+     </body> 
+     <back>
+        <div type="colophon">
+           <p>Typeset in Haselfoot 37 and Henry 8. Printed and bound by Whistleshout, South Africa.</p>
+           <p><q>Plenty of options</q>, he thought, sat on a bench and opened the book he had taken from the Whoopledywhaaian National Library. It was titled 'While thou art here', by Sir Edmund Peckwood. While reading the first sentence, his placid expression turned to a certain <foreign>je ne sais quoi</foreign>:
+              <quote>For the first time in twenty-five years, Dr Burt Diddledygook decided not to turn up to the annual meeting of the Royal Academy of Whoopledywhaa.</quote>
+           </p> 
+           <p>A book which had a great influence on him
+              was <bibl>Tufte's <title>Envisioning
+                 Information</title>
+              </bibl>, although he may
+              never have actually read it.</p>
+        </div> 
+     </back>
   </text>
 </TEI>
