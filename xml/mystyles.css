@@ -1,0 +1,14 @@
+text{
+    color: purple;
+    background: yellow
+
+}
+* {
+    display: block;
+
+}
+item{
+    color: red;
+    }
+    foreign{color:blue;
+    }
